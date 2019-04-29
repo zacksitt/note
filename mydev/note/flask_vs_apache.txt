@@ -1,0 +1,63 @@
+$ sudo apt-get install libapache2-mod-wsgi python-dev
+ sudo a2enmod wsgi 
+ 
+ #The __init__.py looks like this:
+
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def hello():
+    return "Hello, Flask!"
+if __name__ == "__main__":
+    app.run()
+    
+    
+#Virtualenv
+#Setup virtualenv:
+
+$ sudo virtualenv venv
+$ source venv/bin/activate
+(venv)$ 
+
+#Install Flask
+#Install Flask:
+
+(venv)$ sudo pip install Flask
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@flaskhelloworldsite.com
+    ServerName www.flaskhelloworldsite.com
+    ServerAlias flaskhelloworldsite.com
+    ErrorLog /var/www/flaskhelloworldsite.com/logs/error.log
+    CustomLog /var/www/flaskhelloworldsite.com/logs/access.log combined
+
+    WSGIDaemonProcess helloworldapp user=www-data group=www-data threads=5
+    WSGIProcessGroup helloworldapp
+    WSGIScriptAlias / /var/www/FLASKAPPS/helloworldapp/helloworldapp.wsgi
+    Alias /static/ /var/www/FLASKAPPS/helloworldapp/static
+    <Directory /var/www/FLASKAPPS/helloworldapp/static>
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+</VirtualHost>
+
+$ sudo a2ensite flaskhelloworldsite.com.conf
+
+#The WSGI file (/var/www/FLASKAPPS/helloworldapp/helloworldapp.wsgi):
+#!/usr/bin/python
+import sys
+sys.path.insert(0,"/var/www/FLASKAPPS/")
+from helloworldapp import app as application
+
+#Add the following line to /etc/hosts file:
+127.0.0.1 flaskhelloworldsite.com
+
+#Also, we need to create /var/www/flaskhelloworldsite.com/logs directory:
+
+$ sudo mkdir -p /var/www/flaskhelloworldsite.com/logs
+#Change the owner:
+
+$ sudo /etc/init.d/apache2 reload
+
+$ sudo chown -R www-data:www-data flaskhelloworldsite.com

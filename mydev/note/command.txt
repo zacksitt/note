@@ -1,0 +1,27 @@
+#install gtk3
+sudo yum install gtk+-devel gtk3-devel
+#install libasount3
+sudo yum install alsa-lib.i686 alsa-plugins-pulseaudio.i686
+
+Install LAMP ON ubuntu 18.04
+#install apache server
+sudo apt update
+sudo apt install apache2
+sudo systemctl stop apache2.service
+sudo systemctl start apache2.service
+sudo systemctl enable apache2.service
+
+#install php 7.2
+apt-get update && apt-get upgrade
+apt-get install php
+apt-get install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
+
+#python
+sudo pip3 install PyMySQL
+
+#mysql
+mysqldump -u root -p dbname > dbname.sql
+
+
+
+

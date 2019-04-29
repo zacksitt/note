@@ -1,0 +1,208 @@
+My WZ ACC
+fbID : 1733051406739110
+digitalID : YS32FQ32
+
+
+S3 Creditial
+---- xxxx -----
+
+baganit.signin.aws.amazon.com/console/
+data_bitinfo / B1tF11353@N3R
+
+key = AKIAINKYVG352H7OQDXA
+
+data.bitmyanmar.info/wunzin/profile_img
+
+
+Database 
+---- xxxx -----
+
+http://54.167.132.99/phpMyAdmin
+root / bit@dragon143#
+
+ wzdb
+ wzdigest_local / J98KYtjNkyy2yP7u
+
+
+wzrepot/10WWlv8p2hF9qP12
+
+url : http://3.84.194.160/phpMyAdmin/
+username : root
+password : @dM!n@!3iT2m
+
+ssh -i mycykleadmin_new.pem ec2-user@3.84.194.160
+
+ssh -i bitadminuser.pem ec2-user@54.221.198.67
+
+ssh -i mycykleadmin.pem ec2-user@54.208.230.133
+
+ssh -i appdistribution.pem ec2-user@35.171.3.88
+
+ssh -i bitadminuser.pem ec2-user@54.174.199.9
+
+ssh -i wz_mongo.pem ec2-user@3.0.17.137 
+ip:::: 172.31.6.97
+
+ssh -i wz_mongo_main.pem ubuntu@52.23.186.214
+
+
+
+
+ssh -i my_key_pair.pem ubuntu@18.216.224.15
+
+ ---------- [THARAPA] --------- 
+ssh -i tharaper.pem ec2-user@54.251.98.35
+https://54.251.98.35/phpMyAdmin
+root sAVW<q'my#WgV6N)
+
+
+
+http://18.216.224.15/phpmyadmin
+root
+root@2018 
+
+http://54.174.199.9/phpmyadmin
+root
+BiTAn@lyt!c@#$
+
+Yote Pya
+
+wzyotepya / 9OyHa8M8xFXKdrWT
+
+wzyotepya_local / W5lEfvRpfCgTkKqh
+
+wzpb_local / Z0BraVOMgyPD3duQ
+wzpb / vf4k97iOUw7ilahx
+
+Wunzin CMS
+---- xxxx -----
+http://analytics.wunzinn.com/wz_analytics/top20/listing
+wz_admin
+mypassword#3
+
+http://bitmyanmar.info/wunzin_contents
+wunzin
+bitwunzinn2015
+
+
+wz_book
+A293J6TotX9ijwpE
+
+wzpbook
+aXUgwTfuLKnfi41Y
+
+wz_showman
+ZKvt6Pfn8tzoSWLM
+
+wz_comic
+KcOQNi0o32wMKKS6
+
+wz_comics_new
+Kf1UvmFVbo7tmbcm
+
+wz_freeread
+4MqB6JfZ5YfyirlB
+
+wzdev
+vfJntOvaWGxgM3Mw
+Open Project
+myothu.bit@gmail.com
+myothu.jva00
+
+Os
+mtr.jva
+
+MY CYKEL
+------- ++ ------
+admin
+mycykel
+
+
+mysql
+root
+mtrjva00
+
+My AWS
+myoothu.jva@gmail.com
+myothu@2018
+
+Mocha
+user trust1
+pwd : TECH&TRUST@2017
+
+mysql1003.mochahost.com
+trust1_lhm
+lhm@01122014
+
+local mongo
+myuser
+abc123
+
+server
+wzuser
+wunzinn@2018
+
+mongo -u wzuser -p wunzinn@2018 --authenticationDatabase admin
+
+db.createUser(
+   {
+     user: "admin",
+     pwd: "@dm!n007",
+     roles: [ "readWrite", "dbAdmin" ]
+   }
+)
+
+db.createUser( {user: "wzuser",pwd: "mtrjva00",roles: [ { role: "root", db: "admin" } ]});
+use admin
+db.createUser(
+  {
+    user: "wzuser",
+    pwd: "wunzinn@2018",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+  }
+)
+
+db.getUser( "admin", {
+   showCredentials: true,
+   showPrivileges: true,
+   showAuthenticationRestrictions: true
+} )
+
+db.enterlogs.insertOne(
+	{
+		"digital_id":"XXX0007"
+		"facebook_id":123456,
+		"email":"",
+		"login_type:1,
+		"page":"home"
+	}
+)
+net:
+  port: 27017
+  bindIp:127.0.0.1  # Enter 0.0.0.0,:: to bind to all IPv4 and IPv6 addresses or, alternatively, use the net.bindIpAll setting.
+Drupal Site
+myo7hu
+mtr.jva00
+
+yum --enablerepo=remi,remi-php72 install php-pecl-apcu php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongodb php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+
+
+yum --enablerepo=remi,remi-php71 install php-pecl-apcu php-pear php-pecl-mongodb 
+yum install php php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql -y
+
+yum install --enablerepo remi php-pear php-devel
+
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost6 localhost6.localdomain6
+
+git lab
+myoothu.jva@gmail.com
+AdX73LXghzyBbgt
+
+crontab -e
+* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
+
+office
+myothu.bit@gmail.com
+:k!NELjVF2m-2fC
+
